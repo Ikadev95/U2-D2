@@ -18,6 +18,55 @@ hr {
   display: none;
 } /* rimuove l'elemento */
 
+.up{
+  position: fixed;
+  right: 14px;
+  bottom:24px;
+  background-color: hsla(0, 0%, 100%, 0.6);
+  backdrop-filter: blur(5px);
+  box-shadow: 5px 4px 15px -3px rgba(0,0,0,0.43);
+  z-index: 12;
+  border-radius: 8px;
+  border: 2px solid white;
+}
+.fa-caret-square-up{
+  font-size: 48px;
+  padding: 20px;
+  color: #a02571;
+}
+.fa-calendar-alt{
+  font-size: 48px;
+  padding: 20px;
+  color: #3f6bca;
+}
+.fa-plus-square{
+  font-size: 48px;
+  padding: 20px;
+  color: #3f6bca;
+}
+.calendar{
+  position: fixed;
+  right: 14px;
+  bottom:140px;
+  background-color: hsla(0, 0%, 100%, 0.6);
+  backdrop-filter: blur(5px);
+  box-shadow: 5px 4px 15px -3px rgba(0,0,0,0.43);
+  z-index: 12;
+  border-radius: 8px;
+  border: 2px solid white;
+}
+.plus{
+  position: fixed;
+  right: 14px;
+  bottom:256px;
+  background-color: hsla(0, 0%, 100%, 0.6);
+  backdrop-filter: blur(5px);
+  box-shadow: 5px 4px 15px -3px rgba(0,0,0,0.43);
+  z-index: 12;
+  border-radius: 8px;
+  border: 2px solid white;
+}
+
 /* HEADER */
 header {
   background: rgb(0, 160, 198);
@@ -36,9 +85,26 @@ header {
   top: 14px;
 }
 
+section{
+  position: relative;
+  padding-top: 40px;
+}
+
+.news{
+  position: absolute;
+  top: -20px;
+}
+.news h2{
+  text-transform: uppercase;
+  border: #858484 1px solid;
+}
+
 @media screen and (min-width: 800px) {
   header {
     padding: 1em;
+  }
+  body{
+    padding-top: 240px;
   }
 }
 
@@ -67,6 +133,10 @@ header {
   header .brand p {
     margin-bottom: 0;
   }
+  body{
+    padding-top: 130px;
+  }
+
 }
 
 header nav ul {
