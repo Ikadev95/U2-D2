@@ -30,24 +30,24 @@ hr {
   border: 2px solid white;
 }
 .fa-caret-square-up{
-  font-size: 48px;
-  padding: 20px;
+  font-size: 32px;
+  padding: 16px;
   color: #a02571;
 }
 .fa-calendar-alt{
-  font-size: 48px;
-  padding: 20px;
+  font-size: 32px;
+  padding: 16px;
   color: #3f6bca;
 }
 .fa-plus-square{
-  font-size: 48px;
-  padding: 20px;
+  font-size: 32px;
+  padding: 16px;
   color: #3f6bca;
 }
 .calendar{
   position: fixed;
   right: 14px;
-  bottom:140px;
+  bottom:110px;
   background-color: hsla(0, 0%, 100%, 0.6);
   backdrop-filter: blur(5px);
   box-shadow: 5px 4px 15px -3px rgba(0,0,0,0.43);
@@ -58,7 +58,7 @@ hr {
 .plus{
   position: fixed;
   right: 14px;
-  bottom:256px;
+  bottom:196px;
   background-color: hsla(0, 0%, 100%, 0.6);
   backdrop-filter: blur(5px);
   box-shadow: 5px 4px 15px -3px rgba(0,0,0,0.43);
@@ -66,7 +66,27 @@ hr {
   border-radius: 8px;
   border: 2px solid white;
 }
-
+@media screen and (min-width: 700px){
+  .plus{
+    top: 24px;
+    bottom: auto;
+    z-index: 9999;
+  }
+  .calendar{
+    top: 110px;
+    bottom: auto;
+    z-index: 9999;
+  }
+}
+aside div{
+  position: relative;
+}
+.tagBg{
+  position: absolute;
+  right: 12px;
+  font-size: 80px;
+  opacity: 0.2;
+}
 /* HEADER */
 header {
   background: rgb(0, 160, 198);
