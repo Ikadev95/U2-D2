@@ -68,12 +68,12 @@ hr {
 }
 @media screen and (min-width: 700px){
   .plus{
-    top: 24px;
+    top: 124px;
     bottom: auto;
     z-index: 9999;
   }
   .calendar{
-    top: 110px;
+    top: 210px;
     bottom: auto;
     z-index: 9999;
   }
