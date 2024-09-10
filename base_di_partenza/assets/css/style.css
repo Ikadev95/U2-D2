@@ -222,13 +222,15 @@ h1 {
 }
 
 .underlineBox{
+  display: inline-block;
   position: relative;
 }
 
 .underline{
   position: absolute;
   left: 0;
-  bottom: -20px;
+  bottom: -16px;
+  width: 100%;
 }
 
 p,
@@ -287,12 +289,6 @@ h1 + p {
   section {
     border-radius: 20px;
   }
-}
-@media screen and (min-width: 1069px) {
-  .underline {
-    left: 41%; 
-    width: 500px;
-   }
 }
 
 .imgLeft {
